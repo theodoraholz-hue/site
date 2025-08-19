@@ -1,0 +1,82 @@
+html_code <- '
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PPGA - Marketing</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+<!-- Cabeçalho -->
+<header class="bg-[#003366] text-white flex justify-between items-center p-4 sticky top-0 z-50">
+  <div class="font-bold text-xl">PPGA</div>
+  <nav class="space-x-6 hidden md:flex">
+    <a href="#quem-somos">Quem Somos</a>
+    <a href="#noticias">Notícias</a>
+    <a href="#publicacoes">Publicações</a>
+    <a href="#egressos">Egressos</a>
+    <a href="#contato">Contato</a>
+  </nav>
+  <div>🔍</div>
+</header>
+
+<!-- Banner -->
+<section class="relative h-[70vh] bg-cover bg-center flex items-center justify-center text-center" style="background-image: url(\'https://source.unsplash.com/1600x900/?university,students\');">
+  <div class="bg-black bg-opacity-50 p-8 rounded-xl">
+    <h1 class="text-3xl md:text-5xl text-white font-bold mb-6">Conheça o PPGA – Inovação, Pesquisa e Humanização</h1>
+    <a href="#quem-somos" class="bg-[#6A0DAD] text-white px-6 py-3 rounded-lg shadow-lg">Saiba Mais</a>
+  </div>
+</section>
+
+<!-- Quem Somos -->
+<section id="quem-somos" class="py-16 px-6 max-w-4xl mx-auto">
+  <h2 class="text-3xl font-bold text-center mb-6">Quem Somos</h2>
+  <p class="text-lg text-justify leading-relaxed">
+    O Programa de Pós-Graduação em Administração (PPGA) é um espaço de excelência em ensino, pesquisa e extensão, comprometido com a formação de profissionais críticos, éticos e inovadores. Nosso foco está na geração de conhecimento que contribua para a transformação da sociedade, promovendo uma abordagem humanizada e sustentável da administração.
+  </p>
+</section>
+
+<!-- Notícias -->
+<section id="noticias" class="py-16 px-6 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center mb-6">Notícias</h2>
+  <ul class="space-y-4 max-w-3xl mx-auto">
+    <li>📌 Lançamento do novo edital de seleção para o mestrado 2025.</li>
+    <li>📌 Semana da Pesquisa: participe dos nossos workshops gratuitos.</li>
+    <li>📌 Novo laboratório de inovação em marketing inaugurado!</li>
+  </ul>
+</section>
+
+<!-- Publicações -->
+<section id="publicacoes" class="py-16 px-6">
+  <h2 class="text-3xl font-bold text-center mb-6">Publicações</h2>
+  <p class="text-center max-w-3xl mx-auto">Acesse nossas principais publicações científicas e artigos recentes nas áreas de marketing, gestão e inovação.</p>
+</section>
+
+<!-- Egressos -->
+<section id="egressos" class="py-16 px-6 bg-gray-100">
+  <h2 class="text-3xl font-bold text-center mb-6">Egressos</h2>
+  <p class="text-center max-w-3xl mx-auto">Conheça as trajetórias inspiradoras de nossos ex-alunos e onde eles estão atuando hoje.</p>
+</section>
+
+<!-- Contato / Rodapé -->
+<footer id="contato" class="bg-[#003366] text-white py-10 px-6 text-center">
+  <p class="text-lg">📍 Rua Exemplo, 123 - Universidade ABC</p>
+  <p>✉️ ppga@email.exemplo.com | ☎️ (00) 1234-5678</p>
+  <div class="flex justify-center space-x-4 mt-4">
+    <a href="#">🌐</a>
+    <a href="#">📘</a>
+    <a href="#">🐦</a>
+  </div>
+  <p class="text-sm mt-4">© 2025 PPGA - Todos os direitos reservados</p>
+  <a href="#" class="block text-xs mt-2 underline">Política de Privacidade | Termos</a>
+</footer>
+
+</body>
+</html>
+'
+
+writeLines(html_code, "index.html")
+
+browseURL("index.html")
